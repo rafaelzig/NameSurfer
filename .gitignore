@@ -44,3 +44,10 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/kotlinc.xml
+/.idea/encodings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/NameSurfer.iml

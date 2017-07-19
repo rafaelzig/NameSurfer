@@ -46,7 +46,7 @@ class NameSurfer extends JFrame implements NameSurferConstants, ActionListener,
 			e.printStackTrace();
 		}
 
-		javax.swing.SwingUtilities.invokeLater(() -> new NameSurfer());
+		javax.swing.SwingUtilities.invokeLater(NameSurfer::new);
 	}
 
 	/**
@@ -58,7 +58,7 @@ class NameSurfer extends JFrame implements NameSurferConstants, ActionListener,
 		super("Name Surfer - EXTENDED EDITION");
 		setLayout(new BorderLayout(PADDING, PADDING));
 		setSize(APPLICATION_WIDTH, APPLICATION_HEIGHT);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setIconImages(getIcons());
 		setWidgets();
 		setLocationRelativeTo(null);
@@ -164,7 +164,7 @@ class NameSurfer extends JFrame implements NameSurferConstants, ActionListener,
 		}
 
 		btnClear.setEnabled(!graph.isEmpty());
-		txtName.setText(new String());
+		txtName.setText("");
 		txtName.requestFocusInWindow();
 	}
 
